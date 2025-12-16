@@ -11,6 +11,7 @@ import org.jetbrains.kotlin.ir.declarations.IrModuleFragment
 
 @OptIn(ExperimentalCompilerApi::class)
 class Mcp4kCompilerPluginRegistrar : CompilerPluginRegistrar() {
+	override val pluginId = "sh.ondr.mcp4k"
 	override val supportsK2 = true
 
 	override fun ExtensionStorage.registerExtensions(configuration: CompilerConfiguration) {

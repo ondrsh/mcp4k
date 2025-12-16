@@ -80,7 +80,7 @@ class Mcp4kGradlePlugin : KotlinCompilerPluginSupportPlugin {
 					val pluginConfig = target.configurations.findByName(pluginConfigName) ?: return@configureEach
 
 					pluginConfig.dependencies.add(
-						target.dependencies.create("sh.ondr.koja:koja-compiler:0.4.6"),
+						target.dependencies.create("sh.ondr.koja:koja-compiler:0.4.7"),
 					)
 				}
 			}
