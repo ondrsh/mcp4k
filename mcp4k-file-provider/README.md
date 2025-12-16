@@ -8,10 +8,10 @@ First, make sure you have the main mcp4k plugin applied:
 
 ```kotlin
 plugins {
-  kotlin("multiplatform") version "2.2.21" // or kotlin("jvm")
-  kotlin("plugin.serialization") version "2.2.21"
+  kotlin("multiplatform") version "2.3.0" // or kotlin("jvm")
+  kotlin("plugin.serialization") version "2.3.0"
   
-  id("sh.ondr.mcp4k") version "0.4.6" // <-- Required
+  id("sh.ondr.mcp4k") version "0.4.7" // <-- Required
 }
 ```
 
@@ -19,7 +19,7 @@ Then add the file-provider dependency:
 
 ```kotlin
 dependencies {
-  implementation("sh.ondr.mcp4k:mcp4k-file-provider:0.4.6")
+  implementation("sh.ondr.mcp4k:mcp4k-file-provider:0.4.7")
 }
 ```
 
