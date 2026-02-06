@@ -1,16 +1,16 @@
 [versions]
-atomic = "0.29.0"
-build-config = "6.0.6"
+atomic = "0.31.0"
+build-config = "6.0.7"
 coroutines = "1.10.2"
 dokka = "2.1.0"
 gradle-versions = "0.53.0"
 mcp4k = "0.2.1" # Will be substituted
-koja = "0.4.7"
-kotlin = "2.3.0"
+koja = "0.4.8"
+kotlin = "2.3.10"
 kotlinx-io-core = "0.7.0"
-kotlinx-serialization = "1.9.0"
-ksp-api = "2.3.3"
-maven-publish = "0.35.0"
+kotlinx-serialization = "1.10.0"
+ksp-api = "2.3.5"
+maven-publish = "0.36.0"
 okio = "3.16.4"
 spotless = "8.1.0"
 
