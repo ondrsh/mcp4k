@@ -1,6 +1,5 @@
 import com.vanniktech.maven.publish.GradlePlugin
 import com.vanniktech.maven.publish.JavadocJar
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
 	id("java-gradle-plugin")
@@ -52,12 +51,4 @@ if (rootProject.name == "mcp4k") {
 	mavenPublishing {
 		configure(GradlePlugin(javadocJar = JavadocJar.Dokka("dokkaGeneratePublicationHtml")))
 	}
-}
-
-java {
-	toolchain.languageVersion.set(JavaLanguageVersion.of(11))
-}
-
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-	compilerOptions.jvmTarget.set(JvmTarget.JVM_11)
 }

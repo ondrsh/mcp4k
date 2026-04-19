@@ -1,6 +1,5 @@
 import org.gradle.api.publish.maven.tasks.PublishToMavenLocal
 import org.gradle.api.publish.maven.tasks.PublishToMavenRepository
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.konan.target.HostManager
 
 plugins {
@@ -11,12 +10,8 @@ plugins {
 }
 
 kotlin {
-	jvmToolchain(11)
-	jvm {
-		compilerOptions {
-			jvmTarget.set(JvmTarget.JVM_11)
-		}
-	}
+	jvm()
+
 	js(IR) {
 		nodejs()
 		binaries.library()
