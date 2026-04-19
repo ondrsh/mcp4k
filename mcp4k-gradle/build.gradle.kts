@@ -25,6 +25,7 @@ buildConfig {
 	}
 	packageName("sh.ondr.mcp4k.gradle")
 	buildConfigField("String", "PLUGIN_VERSION", "\"$version\"")
+	buildConfigField("String", "KOJA_VERSION", "\"${libs.versions.koja.get()}\"")
 	buildConfigField("String", "REQUIRED_KOTLIN_VERSION", "\"${libs.versions.kotlin.get()}\"")
 	buildConfigField("String", "REQUIRED_KSP_VERSION", "\"${libs.versions.ksp.api.get()}\"")
 }
